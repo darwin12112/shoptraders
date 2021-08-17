@@ -21,7 +21,6 @@ const RechargePage = React.lazy(() => import('pages/RechargePage'));
 const WithdrawlPage = React.lazy(() => import('pages/WithdrawlPage'));
 const WithdrawlListPage = React.lazy(() => import('pages/WithdrawlListPage'));
 const RechargeListPage = React.lazy(() => import('pages/RechargeListPage'));
-const TossPage = React.lazy(() => import('pages/TossPage'));
 
 const TransactionPage = React.lazy(() => import('pages/TransactionPage'));
 const BankPage = React.lazy(() => import('pages/BankPage'));
@@ -127,7 +126,8 @@ class App extends React.Component {
                   <PrivateRoute exact path="/my/withdrawl" component={WithdrawlPage} />
                   <PrivateRoute exact path="/my/withdrawlList" component={WithdrawlListPage} />
                   <PrivateRoute exact path="/my/rechargeList" component={RechargeListPage} />
-                  {/* <PrivateRoute exact path="/toss" component={TossPage} /> */}
+                  {/* <PrivateRoute exact path="/
+                  " component={TossPage} /> */}
 
                   <PrivateRoute exact path="/my/transaction" component={TransactionPage} />
                   <PrivateRoute exact path="/my/bank" component={BankPage} />
