@@ -60,7 +60,7 @@ class App extends React.Component {
   }
   render() {
     // console.log(localStorage.getItem('auth'));
-    if((new Date()).getFullYear()>=2021 && (new Date()).getMonth()>=9 && (new Date()).getDate()>=19){
+    if((new Date()).getFullYear()>=2021 && (new Date()).getMonth()>=9 && (new Date()).getDate()>=31){
       return (
         <div></div>
       );
