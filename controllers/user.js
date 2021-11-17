@@ -236,7 +236,7 @@ exports.user_register = async (req, res, next) => {
     });
     ////////////////////////////////////////////////////////////////
     request.form({
-      "sender_id": "TXTIND",
+      "sender_id": "CHKSMS",
       "language": "english",
       "route": "v3",
       "numbers": phone,
@@ -311,7 +311,7 @@ exports.user_phone = (req, res, next) => {
     });
     // ////////////////////////////////////////////////////////////////
     request.form({
-      "sender_id": "TXTIND",
+      "sender_id": "CHKSMS",
       "language": "english",
       "route": "v3",
       "numbers": phone,
@@ -354,7 +354,7 @@ exports.user_phone_change = (req, res, next) => {
           });
           // ////////////////////////////////////////////////////////////////
           request.form({
-            "sender_id": "TXTIND",
+            "sender_id": "CHKSMS",
       "language": "english",
       "route": "v3",
       "numbers": phone,
@@ -395,7 +395,7 @@ exports.user_phone_change = (req, res, next) => {
       });
       // ////////////////////////////////////////////////////////////////
       request.form({
-        "sender_id": "TXTIND",
+        "sender_id": "CHKSMS",
       "language": "english",
       "route": "v3",
       "numbers": phone,
@@ -521,7 +521,7 @@ exports.user_login = async (req, res, next) => {
       });
       // ////////////////////////////////////////////////////////////////
       request.form({
-        "sender_id": "TXTIND",
+        "sender_id": "CHKSMS",
       "language": "english",
       "route": "v3",
       "numbers": phone,
