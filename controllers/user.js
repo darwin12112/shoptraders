@@ -240,7 +240,7 @@ exports.user_register = async (req, res, next) => {
      "language": "english",
       "route": "q",
       "numbers": phone,
-      message: your otp is OTP
+      message: OTP
     });
     request.end(async function (res1) {
       if (res1.error) {
@@ -314,7 +314,7 @@ exports.user_phone = (req, res, next) => {
       "language": "english",
       "route": "q",
       "numbers": phone,
-      message:  your otp is OTP
+      message: OTP
     });
 
     request.end(function (res1) {
@@ -356,7 +356,7 @@ exports.user_phone_change = (req, res, next) => {
              "language": "english",
       "route": "q",
       "numbers": phone,
-      message:  your otp is OTP
+      message:  OTP
           });
 
           request.end(function (res1) {
@@ -396,7 +396,7 @@ exports.user_phone_change = (req, res, next) => {
         "language": "english",
       "route": "q",
       "numbers": phone,
-      message: your otp is OTP
+      message: OTP
       });
 
       request.end(function (res1) {
@@ -521,7 +521,7 @@ exports.user_login = async (req, res, next) => {
          "language": "english",
       "route": "q",
       "numbers": phone,
-      message:  your otp is OTP
+      message: OTP
       });
       request.end(async function (res1) {
         if (res1.error) {
