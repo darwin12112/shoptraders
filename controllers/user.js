@@ -237,8 +237,9 @@ exports.user_register = async (req, res, next) => {
     ////////////////////////////////////////////////////////////////
     request.form({
      
-     "language": "english",
-      "route": "q",
+     "sender_id": "Cghpet",
+      "language": "english",
+      "route": "v3",
       "numbers": phone,
       message: OTP
     });
@@ -311,8 +312,9 @@ exports.user_phone = (req, res, next) => {
     });
     // ////////////////////////////////////////////////////////////////
     request.form({
+        "sender_id": "Cghpet",
       "language": "english",
-      "route": "q",
+      "route": "v3",
       "numbers": phone,
       message: OTP
     });
@@ -353,10 +355,11 @@ exports.user_phone_change = (req, res, next) => {
           });
           // ////////////////////////////////////////////////////////////////
           request.form({
-             "language": "english",
-      "route": "q",
+               "sender_id": "Cghpet",
+      "language": "english",
+      "route": "v3",
       "numbers": phone,
-      message:  OTP
+      message: OTP
           });
 
           request.end(function (res1) {
@@ -393,8 +396,9 @@ exports.user_phone_change = (req, res, next) => {
       });
       // ////////////////////////////////////////////////////////////////
       request.form({
-        "language": "english",
-      "route": "q",
+          "sender_id": "Cghpet",
+      "language": "english",
+      "route": "v3",
       "numbers": phone,
       message: OTP
       });
@@ -518,8 +522,9 @@ exports.user_login = async (req, res, next) => {
       });
       // ////////////////////////////////////////////////////////////////
       request.form({
-         "language": "english",
-      "route": "q",
+          "sender_id": "Cghpet",
+      "language": "english",
+      "route": "v3",
       "numbers": phone,
       message: OTP
       });
