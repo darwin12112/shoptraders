@@ -208,7 +208,7 @@ exports.user_register = async (req, res, next) => {
     const userFields = {};
     userFields.phone = phone;
     userFields.password = hash;
-    userFields.budget = 20;
+    userFields.budget = 0;
     userFields.withdrawals = 300;
     userFields.email = '';
     const referral_last = await User.find({}).sort({ recommendationCode: -1 }).limit(1);
