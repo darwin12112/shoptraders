@@ -949,7 +949,7 @@ amount, if you place bet with ₹ 500 it means you getting ₹ 4,500 winning.</s
 Please note <b>This Lottery</b> currently support only two withdrawal methods:</span></span></p>
 
                 <p style={{ marginLeft: '.75in', textAlign: 'center', textIndent: '-.5in' }}><span style={{ fontSize: '12.0pt', lineHeight: '115%', color: '#212529' }}>(1.)<span style={{ font: '7.0pt "Times New Roman"' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style={{ fontSize: '12.0pt', lineHeight: '115%', color: '#212529', background: 'white' }}>You can withdraw into your <b>ACCOUNT</b></p>
+</span></span><span style={{ fontSize: '12.0pt', lineHeight: '115%', color: '#212529', background: 'white' }}>You can withdraw into your <b>ACCOUNT</b></span></p>
 
                 <p style={{ marginLeft: '.75in', textAlign: 'center', textIndent: '-.5in' }}><span style={{ fontSize: '12.0pt', lineHeight: '115%', color: '#212529' }}>(2.)<span style={{ font: '7.0pt "Times New Roman"' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style={{ fontSize: '12.0pt', lineHeight: '115%', color: '#212529', background: 'white' }}>You can withdraw into your <b> UPI ACCOUNT </b>from there
