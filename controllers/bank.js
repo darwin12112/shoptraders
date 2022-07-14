@@ -432,13 +432,13 @@ exports.getResponseRecharge = async (req, res, next) => {
       await user.save();
       let bonus1=0;
       if (recharge.money >= 100) bonus1 = 50;
-      else if (recharge.money > 200) bonus1 = 100;
-      else if (recharge.money > 500) bonus1 = 150;
-      else if (recharge.money > 1500) bonus1 = 300;
-      else if (recharge.money > 5000) bonus1 = 1000;
-      else if (recharge.money > 10000) bonus1 = 2000;
-      else if (recharge.money > 20000) bonus1 = 5000;
-      else if (recharge.money > 50000) bonus1 = 10000;
+      else if (recharge.money >= 200) bonus1 = 100;
+      else if (recharge.money >=500) bonus1 = 150;
+      else if (recharge.money >= 1500) bonus1 = 300;
+      else if (recharge.money >= 5000) bonus1 = 1000;
+      else if (recharge.money >= 10000) bonus1 = 2000;
+      else if (recharge.money >= 20000) bonus1 = 5000;
+      else if (recharge.money >= 50000) bonus1 = 10000;
       if (user.refer1) {
         const tmp1 = {};
         tmp1.better = user._id;
