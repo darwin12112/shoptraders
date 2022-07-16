@@ -36,7 +36,7 @@ exports.deleteBank = (req, res, next) => {
 
 exports.postWithdrawl = async (req, res, next) => {
   const amount = Math.abs(parseFloat(req.body.amount));
-  if (amount < 100)
+  if (amount < 1)
     return res.status(400).json({ error: "Only more than ₹ 100 allowed" });
   const user = await User.findById(req.userFromToken._id);
   // if (user.withdrawals > user.bets) {
@@ -60,7 +60,7 @@ exports.postWithdrawl = async (req, res, next) => {
   const recharge = await Recharge.countDocuments({
     user: req.userFromToken._id,
   });
-  if (recharge < 1) {
+  if (recharge < 50) {
     return res
       .status(400)
       .json({
@@ -383,7 +383,7 @@ exports.postRecharge = async (req, res, next) => {
   ) {
     return res.status(400).json({ error: "Please input correct amount" });
   }
-  if (Math.abs(parseFloat(req.body.money)) < 100) {
+  if (Math.abs(parseFloat(req.body.money)) < 1) {
     return res
       .status(400)
       .json({ error: "Only more than 100rs allowed to recharge!" });
