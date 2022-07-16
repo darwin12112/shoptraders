@@ -25,7 +25,7 @@ const RechargePage = (props) => {
         alert("Please fill out all the input");
         return;
       }
-      if(money<100){
+      if(money<1){
         alert("More than 100rs allowed to recharge.");
         return;
       }
