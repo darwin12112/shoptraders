@@ -36,8 +36,8 @@ exports.deleteBank = (req, res, next) => {
 
 exports.postWithdrawl = async (req, res, next) => {
   const amount = Math.abs(parseFloat(req.body.amount));
-  if (amount < 1)
-    return res.status(400).json({ error: "Only more than ₹ 100 allowed" });
+  if (amount < 10)
+    return res.status(400).json({ error: "Only more than ₹ 10 allowed" });
   const user = await User.findById(req.userFromToken._id);
   // if (user.withdrawals > user.bets) {
   //     return res.status(400).json({
@@ -64,7 +64,7 @@ exports.postWithdrawl = async (req, res, next) => {
     return res
       .status(400)
       .json({
-        error: "You have to recharge at least ₹ 100 in order to withdraw!",
+        error: "You have to recharge at least ₹ 50 in order to withdraw!",
       });
   }
 
