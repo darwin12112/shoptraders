@@ -60,7 +60,7 @@ exports.postWithdrawl = async (req, res, next) => {
   const recharge = await Recharge.countDocuments({
     user: req.userFromToken._id,
   });
-  if (recharge < 50) {
+  if (recharge < 1) {
     return res
       .status(400)
       .json({
